@@ -9,17 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let duolingo: AppModel = AppModel(name: "Duolingo", icon: "duolingoIcon", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with even more languages.")
-    
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            AppCard(app: duolingo)
-            AppCard(app: duolingo)
-            AppCard(app: duolingo)
-            AppCard(app: duolingo)
+        TabView {
+           TodayTab()
+                .tabItem {Label("Today", systemImage: "doc.text.image")}
+                .navigationTitle("Today")
+            GamesTab()
+                .tabItem {Label("Games", systemImage: "gamecontroller.fill")}
+            AppsTab()
+                .tabItem {Label("Apps", systemImage: "square.stack.3d.up.fill")}
+            ArcadeTab()
+                .tabItem {Label("Arcade", systemImage: "arcade.stick")}
+            SearchTab()
+                .tabItem {Label("Search", systemImage: "magnifyingglass")}
         }
-        .padding()
-        .ignoresSafeArea()
     }
 }
 

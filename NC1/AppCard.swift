@@ -17,7 +17,7 @@ struct AppCard: View {
             Color(app.color)
                 .frame(width: 350, height: 430)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
-                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
+                .opacity(0.8)
             VStack {
                 ZStack(alignment: .bottomLeading) {
                     Image(app.image)
