@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let duolingo: AppModel = AppModel(name: "Duolingo", icon: "duolingoIcon", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with even more languages.")
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView(showsIndicators: false) {
+            AppCard(app: duolingo)
+            AppCard(app: duolingo)
+            AppCard(app: duolingo)
+            AppCard(app: duolingo)
         }
         .padding()
+        .ignoresSafeArea()
     }
 }
 
