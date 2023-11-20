@@ -9,18 +9,19 @@ import SwiftUI
 
 struct TodayTab: View {
     
-    let duolingo: AppModel = AppModel(name: "Duolingo", icon: "duolingoIcon", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with even more languages.")
+    let duolingo: AppModel = AppModel(name: "Duolingo", icon: "duolingoIcon", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with more languages than ever.")
     
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 AppCard(app: duolingo)
+//                AppCycleCard(apps: [duolingo, duolingo, duolingo, duolingo])
                 AppCard(app: duolingo)
-                AppCard(app: duolingo)
-                AppCard(app: duolingo)
+//                AppCycleCard(apps: [duolingo, duolingo, duolingo, duolingo])
             }
             .navigationTitle("Today")
-            .padding(.bottom, 83)
+            .navigationBarTitleDisplayMode(.large)
+//            .padding(.bottom, 83)
         }
         .ignoresSafeArea()
     }

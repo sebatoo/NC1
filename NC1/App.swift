@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class AppModel {
+class AppModel: Identifiable {
     var id: UUID = UUID()
     
     var name: String
@@ -21,6 +21,7 @@ class AppModel {
     var color: Color
     
     init(name: String, icon: String, description: String, image: String = "noImage", banner: String = "OUR FAVORITES", headline: String = "Try this popular app!", caption: String = "Rising in popularity.", color: Color = .gray) {
+//        self.id
         self.name = name
         self.icon = icon
         self.description = description

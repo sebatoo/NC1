@@ -13,6 +13,7 @@ struct NC1App: App {
         WindowGroup {
             ContentView()
             //AppCard()
+//        InfiniteImageRibbon()
         }
     }
 }

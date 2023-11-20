@@ -9,7 +9,12 @@ import SwiftUI
 
 struct GamesTab: View {
     var body: some View {
-        Text("Games")
+        NavigationStack {
+            ScrollView {
+                AppCarousel(app: duolingo)
+            }
+            .navigationTitle("Games")
+        }
     }
 }
 

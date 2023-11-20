@@ -13,7 +13,6 @@ struct ContentView: View {
         TabView {
            TodayTab()
                 .tabItem {Label("Today", systemImage: "doc.text.image")}
-                .navigationTitle("Today")
             GamesTab()
                 .tabItem {Label("Games", systemImage: "gamecontroller.fill")}
             AppsTab()

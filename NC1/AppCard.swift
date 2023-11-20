@@ -55,8 +55,7 @@ struct AppCard: View {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 48, height: 48)
-                            .clipShape(RoundedRectangle(cornerRadius: 10
-                                                       ))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
                         VStack(alignment: .leading) {
                             Text(app.name)
                                 .bold()
