@@ -13,7 +13,7 @@ struct GamesTab: View {
             ScrollView {
                 Spacer()
                 Spacer()
-                AppCarousel(apps: sampleApps)
+                AppCarousel(apps: [pokemonGo, netflix, disneyPlus, tiktok])
                 Spacer()
                 Spacer()
                 Spacer()
@@ -28,7 +28,7 @@ struct GamesTab: View {
                     Button("See All") {}
                 }
                 .frame(width: 350)
-                AppHighlight(apps: sampleApps)
+                AppHighlight(apps: [instagram, roblox, whatsapp, duolingo])
             }
             .navigationTitle("Games")
         }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let sampleApps: [AppModel] = [duolingo, duolingo2, duolingo3, duolingo4, duolingo5]
+let sampleApps: [AppModel] = [duolingo, tiktok, netflix, instagram, roblox, disneyPlus, whatsapp, pokemonGo]
 
 struct AppCarousel: View {
     @State private var currentIndex: Int = 0
