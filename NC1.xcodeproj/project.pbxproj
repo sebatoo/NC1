@@ -13,6 +13,7 @@
 		EA7AD0012B03C6F80063DB9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7AD0002B03C6F80063DB9D /* Preview Assets.xcassets */; };
 		EA7AD00A2B03CB870063DB9D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AD0092B03CB870063DB9D /* App.swift */; };
 		EA7AD00C2B03CF920063DB9D /* AppCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AD00B2B03CF920063DB9D /* AppCard.swift */; };
+		EA85A5A72B0E5256008F8044 /* AppHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85A5A62B0E5256008F8044 /* AppHighlight.swift */; };
 		EAD89DEE2B066C8B0072AF90 /* GamesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD89DED2B066C8B0072AF90 /* GamesTab.swift */; };
 		EAD89DF02B066C980072AF90 /* AppsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD89DEF2B066C980072AF90 /* AppsTab.swift */; };
 		EAD89DF22B066CA00072AF90 /* ArcadeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD89DF12B066CA00072AF90 /* ArcadeTab.swift */; };
@@ -32,6 +33,7 @@
 		EA7AD0002B03C6F80063DB9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA7AD0092B03CB870063DB9D /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		EA7AD00B2B03CF920063DB9D /* AppCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCard.swift; sourceTree = "<group>"; };
+		EA85A5A62B0E5256008F8044 /* AppHighlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHighlight.swift; sourceTree = "<group>"; };
 		EAD89DED2B066C8B0072AF90 /* GamesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTab.swift; sourceTree = "<group>"; };
 		EAD89DEF2B066C980072AF90 /* AppsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTab.swift; sourceTree = "<group>"; };
 		EAD89DF12B066CA00072AF90 /* ArcadeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeTab.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				EA7AD00B2B03CF920063DB9D /* AppCard.swift */,
 				EAD89DF72B06757C0072AF90 /* AppCycleCard.swift */,
 				EAD89DED2B066C8B0072AF90 /* GamesTab.swift */,
+				EA85A5A62B0E5256008F8044 /* AppHighlight.swift */,
 				EAD89DFD2B0B9E250072AF90 /* AppCarousel.swift */,
 				EAD89DF92B07B2FE0072AF90 /* test.swift */,
 				EAD89DFB2B07C7DB0072AF90 /* File.swift */,
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA85A5A72B0E5256008F8044 /* AppHighlight.swift in Sources */,
 				EA7ACFFC2B03C6F70063DB9D /* ContentView.swift in Sources */,
 				EAD89DFC2B07C7DB0072AF90 /* File.swift in Sources */,
 				EAD89DF62B0671680072AF90 /* TodayTab.swift in Sources */,

@@ -7,12 +7,34 @@
 
 import SwiftUI
 
+let sampleApps: [AppModel] = [duolingo, duolingo2, duolingo3, duolingo4, duolingo5]
+
 struct AppCarousel: View {
-    let app: AppModel
+    @State private var currentIndex: Int = 0
+    let apps: [AppModel]
     
     var body: some View {
-        ScrollView(.horizontal) {
-            AppSwipeCard(app: app)        }
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(apps) { app in
+                    AppSwipeCard(app: app)
+                }
+            }
+        }
+        .content.offset(x: CGFloat(apps.count % 2 == 0 ? currentIndex * -360 + 540 : currentIndex * -360 + 720))
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    withAnimation(Animation.easeOut(duration: 0.2)) {
+                        if value.translation.width < 0 && currentIndex < apps.count - 1 {
+                            self.currentIndex += 1
+                        }
+                        else if value.translation.width > 0 && self.currentIndex > 0 {
+                            self.currentIndex -= 1
+                        }
+                    }
+                }
+        )
     }
 }
 
@@ -80,10 +102,10 @@ struct AppSwipeCard: View {
                 .frame(minWidth: 350, minHeight: 55)
             }
         }
-        
+        .frame(width: 350)
     }
 }
 
 #Preview {
-    AppCarousel(app: duolingo)
+    AppCarousel(apps: sampleApps)
 }

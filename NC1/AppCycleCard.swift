@@ -8,7 +8,10 @@
 import SwiftUI
 
 let duolingo: AppModel = AppModel(name: "Duolingo", icon: "duolingoIcon", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with even more languages.")
-let duolingo2: AppModel = AppModel(name: "Duolingo", icon: "duolingoImage", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with even more languages.", color: .green)
+let duolingo2: AppModel = AppModel(name: "Duolingo", icon: "duolingoImage", description: "The language learning app", image: "duolingoIcon", headline: "Learn a new language!", caption: "Now with even more languages.", color: .green)
+let duolingo3: AppModel = AppModel(name: "Duolingo", icon: "duolingoIcon", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with even more languages.", color: .green)
+let duolingo4: AppModel = AppModel(name: "Duolingo", icon: "duolingoImage", description: "The language learning app", image: "duolingoIcon", headline: "Learn a new language!", caption: "Now with even more languages.", color: .green)
+let duolingo5: AppModel = AppModel(name: "Duolingo", icon: "duolingoIcon", description: "The language learning app", image: "duolingoImage", headline: "Learn a new language!", caption: "Now with even more languages.", color: .green)
 
 struct AppCycleCard: View {
     

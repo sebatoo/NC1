@@ -20,7 +20,7 @@ class AppModel: Identifiable {
     var caption: String
     var color: Color
     
-    init(name: String, icon: String, description: String, image: String = "noImage", banner: String = "OUR FAVORITES", headline: String = "Try this popular app!", caption: String = "Rising in popularity.", color: Color = .gray) {
+    init(name: String, icon: String, description: String, image: String = "noImage", banner: String = "NOW AVAILABLE", headline: String = "Try this popular app!", caption: String = "Rising in popularity.", color: Color = .gray) {
 //        self.id
         self.name = name
         self.icon = icon
